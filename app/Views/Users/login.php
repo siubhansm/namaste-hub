@@ -1,5 +1,6 @@
 <html>
     <body>
+     <?php echo view ('Assets/header');  ?>
       <form method="post" name="loginuser" action="<?= site_url('/authoriseUser') ?>">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email:</label>
@@ -15,6 +16,7 @@
     <a href="/register">Register here if you don't have an account</a>
   </div>
 </form>
+ <?php echo view ('Assets/footer');  ?>
     </body>
 </html>
 

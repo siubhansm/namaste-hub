@@ -7,11 +7,10 @@ class Login extends Controller
 {
     public function login()
     {
-        $data = []; 
-        helper(['form']);
-        echo view ('Assets/header', $data);   
+       
+         
         echo view ('Users//login');
-        echo view ('Assets/footer');
+
     }
 
     public function authorise()

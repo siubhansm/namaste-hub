@@ -1,5 +1,11 @@
+
 <html>
     <body>
+        <?php
+    echo view ('Assets/header');   
+
+    
+    ?>
         <h1>Register at Namaste Yoga</h1>
        <form method="post" action="<?= base_url('submit')?>">
             <div class="form-row" >
@@ -23,7 +29,7 @@
                 </div>
                 <div class="form-group col-md-4">
                 <label >Password</label>
-                <input  type="password" name="conformpassword" class="form-control" >
+                <input  type="password" name="confirmpassword" class="form-control" >
                 </div>
                 <div class="form-group col-md-4">
                 <label >Confirm Password</label>
@@ -31,9 +37,13 @@
                 </div>
             </div>
             
-            <button type="submit" class="btn btn-primary">Register</button>
+            <input type="submit" class="btn btn-primary">
         </form>
+ <?php
+    echo view ('Assets/footer');   
 
+    
+    ?>
     </body>
 </html>
 

@@ -14,10 +14,9 @@ class UserAccount extends Controller
     public function register()
     
     {
-     
-        echo view ('Assets/header');   
+    
         echo view ('Users/register');
-        echo view ('Assets/footer');
+
     }
 
     public function addUser()
