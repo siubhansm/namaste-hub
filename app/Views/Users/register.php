@@ -18,25 +18,35 @@
                 <input type="text" name="lName" class="form-control"  >
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-row">
+            <div class="col-6">
                 <label >Email</label>
                 <input type="text" name="email" class="form-control"  >
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
+            <div class="col-6">
                 <label >Date of Birth</label>
-                <input type="text" name="dob" class="form-control" >
-                </div>
-                <div class="form-group col-md-4">
+                <input type="text" name="dob" class="form-control" >         
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="form group col-6">
                 <label >Password</label>
                 <input  type="password" name="confirmpassword" class="form-control" >
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form group col-6">
                 <label >Confirm Password</label>
                 <input  type="password" name="password"class="form-control" >
                 </div>
             </div>
-            
+            <?php
+            if (isset($validation)): 
+            ?> <div class="aler alert-danger" role="alert">
+                <?php echo $validation->listErrors()
+                ?>
+            </div>
+            <?php
+            endif;
+            ?>
             <input type="submit" class="btn btn-primary">
         </form>
  <?php
