@@ -34,16 +34,16 @@ CI_ENVIRONMENT = development
 # app.sessionRegenerateDestroy = false
 
 # app.CSPEnabled = false
-
+enable database.default
 #--------------------------------------------------------------------
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
+database.default.hostname = localhost
+database.default.database = namasteHub
+database.default.username = root
+database.default.password = qwerty
+database.default.DBDriver = MySQLi
 # database.default.DBPrefix =
 
 # database.tests.hostname = localhost

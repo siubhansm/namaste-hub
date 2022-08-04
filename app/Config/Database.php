@@ -32,9 +32,9 @@ class Database extends Config
      */
      public $default = [
         'DSN'      => '',
-        'hostname' => 'localhost:3306', //this is what I changed. It initially would not connect to the database but works now
+        'hostname' => 'localhost', 
         'username' => 'root',
-        'password' => '',
+        'password' => 'qwerty',
         'database' => 'namasteHub',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
