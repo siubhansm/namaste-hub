@@ -1,12 +1,9 @@
-<?php namespace App\Controllers;
-  
-use CodeIgniter\Controller;
-  
-class Dashboard extends Controller
-{
-    public function index()
-    {
-        $session = session();
-        echo "Welcome back, ".$session->get('fName')." ".$session->get('lName');
-    }
-}
+<html>
+    <body>
+     <?php echo view ('Assets/header');  ?>
+     <?php  $session = session();
+      echo "Welcome back, ".$session->get('fName')." ".$session->get('lName');?>
+ <?php echo view ('Assets/footer');  ?>
+    </body>
+</html>
+

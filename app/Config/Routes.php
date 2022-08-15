@@ -32,8 +32,8 @@ $routes->get('/update','UserAccount::update');
 $routes->post('/submit','userAccount::addUser');
 $routes->get('/login','Login::login');
 $routes->post('/authoriseUser','Login::authorise');
-
-
+$routes->get('/dashboard','Login::dashboard');
+$routes->get('/logout','Login::logout');
 /*
  * --------------------------------------------------------------------
  * Route Definitions

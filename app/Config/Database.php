@@ -30,7 +30,7 @@ class Database extends Config
      *
      * @var array
      */
-     public $default = [
+    public $default = [
         'DSN'      => '',
         'hostname' => 'localhost:3306', //this is what I changed. It initially would not connect to the database but works now
         'username' => 'root',

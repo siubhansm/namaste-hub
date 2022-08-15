@@ -7,10 +7,8 @@ class Login extends Controller
 {
     public function login()
     {
-       
-         
-        echo view ('Users//login');
-
+   
+        echo view ('Users/login');
     }
 
     public function authorise()
@@ -20,10 +18,12 @@ class Login extends Controller
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
         $data = $model->where('email', $email)->first();
+
         if($data){
+            
             $pass = $data['password'];
-            $verify_pass = password_verify($password, $pass);
-            if($verify_pass){
+            //$verify_pass = password_verify($password, $pass);
+            if($password === $pass){
                 $ses_data = [ 
                     'id' => $data['userId'],
                     'fName' => $data['fName'],
@@ -32,11 +32,11 @@ class Login extends Controller
                     'logged_in' => true
                 ];
                 $session->set($ses_data);
-                return redirect()->to('Users/dashboard');
+                return redirect()->to('/dashboard');
             }
             else{
                 $session->setFlashdata('msg', 'Wrong Password');
-                return redirect()->to('/');
+                return redirect()->to('/login');
             }
         }
         else{
@@ -44,7 +44,12 @@ class Login extends Controller
             return redirect()->to('/register');
         }
     }
-  
+    public function dashboard()
+    {
+       
+        echo view ('Users/dashboard');
+        
+    }
     public function logout()
     {
         $session = session();
