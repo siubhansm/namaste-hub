@@ -1,0 +1,55 @@
+.nFooter {
+  background-color: #ececec;
+}
+.nHome {
+  height: 100vh;
+  background-image: url("../images/homeImage.webp");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.nRegister {
+  height: 100vh;
+  background-image: url("../images/registerImage.webp");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.nLogin {
+  height: 100vh;
+  background-image: url("../images/loginImage.webp");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.nLink {
+  text-decoration: none;
+  color: white;
+}
+.nLink:hover {
+  color: black;
+}
+.nDescription {
+  color: white;
+  font-size: 2rem;
+}
+.btn {
+  background-color: #ececec;
+}
+.nForm {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  border: 4px solid #ececec;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.error {
+  color: red;
+}
+.form-label {
+  color: black;
+}

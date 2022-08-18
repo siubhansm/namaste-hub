@@ -32,16 +32,16 @@ class Login extends Controller
                     'logged_in' => true
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/dashboard');
+                return redirect()->to(base_url('/dashboard'));
             }
             else{
-                $session->setFlashdata('msg', 'Wrong Password');
-                return redirect()->to('/login');
+                $session->setFlashdata('item', 'Wrong Password');
+                return redirect()->to(base_url('/login'));
             }
         }
         else{
-            $session->setFlashdata('msg', 'Email not Found');
-            return redirect()->to('/register');
+            $session->setFlashdata('item', 'Email not found');
+            return redirect()->to(base_url('/register'));
         }
     }
     public function dashboard()
@@ -54,7 +54,7 @@ class Login extends Controller
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/login');
+         return redirect()->to(base_url('/login'));
     }
 } 
 ?>

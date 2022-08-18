@@ -3,52 +3,63 @@
     <body>
         <?php
     echo view ('Assets/header');   
-
-    
     ?>
-        <h1>Register at Namaste Yoga</h1>
-       <form method="post" action="<?= base_url('submit')?>">
+
+    <div class="nRegister">
+
+    <div class="container ">
+      <br>
+       <form class="nForm" method="post" action="<?= base_url('submit')?>">
+        <h1>Register at Namaste Yoga</h1> 
+        <?php if (session()->getFlashdata('item') !== NULL) : ?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <?php echo session()->getFlashdata('item'); ?>
+        
+    </div>
+<?php endif; ?>
+
             <div class="form-row" >
-                <div class="form-group col-md-6">
+                <div class="form-group">
                     <label>First Name</label>
-                <input type="text" name="fName" class="form-control" >
+                <input type="text" name="fName" class="form-control" value="<?php
+             echo $fName; ?>" >
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group">
                     <label>Last Name</label>
-                <input type="text" name="lName" class="form-control"  >
+                <input type="text" name="lName" class="form-control" value="<?php
+             echo $lName; ?>" >
                 </div>
             </div>
             <div class="form-row">
-            <div class="col-6">
-                <label >Email</label>
-                <input type="text" name="email" class="form-control"  >
+            <div >
+                <label>Email</label>
+                <input type="text" name="email" class="form-control" value="<?php
+             echo $email; ?>" >
             </div>
-            <div class="col-6">
+            <div >
                 <label >Date of Birth</label>
-                <input type="text" name="dob" class="form-control" >         
+                <input type="text" name="dob" class="form-control" value="<?php
+             echo $dob; ?>">         
             </div>
             </div>
             <div class="form-row">
-                <div class="form group col-6">
+                <div class="form group ">
                 <label >Password</label>
-                <input  type="password" name="confirmpassword" class="form-control" >
+                <input  type="password" name="password" class="form-control" >
                 </div>
-                <div class="form group col-6">
+                <div class="form group ">
                 <label >Confirm Password</label>
-                <input  type="password" name="password"class="form-control" >
+                <input  type="password" name="confirmpassword"class="form-control" >
                 </div>
             </div>
+            <div class="error">
             <?php
-            if (isset($validation)): 
-            ?> <div class="aler alert-danger" role="alert">
-                <?php echo $validation->listErrors()
-                ?>
-            </div>
-            <?php
-            endif;
-            ?>
-            <input type="submit" class="btn btn-primary">
+             echo $msg; ?></div>
+            <br/>
+            <input type="submit" class="btn btn-secondary">
         </form>
+        </div>
+        </div>
  <?php
     echo view ('Assets/footer');   
 

@@ -11,8 +11,9 @@
      
 </head>
 <body>
+  
     <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="#">Namaste Yoga</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,26 +26,25 @@
         <li class="nav-item">
           <a class="nav-link" href="/register">Register</a>
         </li>
-         <li class="nav-item">
+        <?php  $session = session();
+        if(!$session->get('logged_in')) echo '<li class="nav-item">
           <a class="nav-link" href="/login">Login</a>
+        </li>';  ?>
         </li>
-        </li>
-         <li class="nav-item">
+        <?php  $session = session();
+        if($session->get('logged_in')) echo '<li class="nav-item">
           <a class="nav-link" href="/logout">Logout</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Admin Area
+        </li>';  ?>
+         
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Admin Login</a></li>
-            <li><a class="dropdown-item" href="#">Might Need</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Might Need</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled Might Need</a>
         </li>
       </ul>
     </div>
