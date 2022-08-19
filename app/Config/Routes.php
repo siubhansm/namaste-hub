@@ -45,6 +45,9 @@ $routes->post('/userUpdate', 'UserAccount::userUpdate', ['filter' => 'auth']);
 $routes->add('/userDelete/(:num)','UserAccount::userDelete/$1', ['filter' => 'auth']);
 $routes->add('/profileEdit/(:num)','UserAccount::profileEdit/$1');
 $routes->post('/profileUpdate', 'UserAccount::profileUpdate');
+$routes->get('/uploadView','Classes::uploadView');
+$routes->post('/upload','Classes::upload');
+$routes->get('/video','Classes::video');
 /*
  * --------------------------------------------------------------------
  * Route Definitions
