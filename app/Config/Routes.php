@@ -29,11 +29,22 @@ $routes->set404Override();
 //$routes->setAutoRoute(false);
 $routes->get('/register','UserAccount::register');
 $routes->get('/update','UserAccount::update');
-$routes->post('/submit','userAccount::addUser');
+$routes->post('/submit','UserAccount::addUser');
 $routes->get('/login','Login::login');
 $routes->post('/authoriseUser','Login::authorise');
 $routes->get('/dashboard','Login::dashboard');
 $routes->get('/logout','Login::logout');
+$routes->get('/loginAdmin','Admin::loginAdmin');
+$routes->get('/dashboardAdmin','Admin::dashboardAdmin', ['filter' => 'auth']);
+$routes->post('/authoriseAdmin','Admin::authoriseAdmin');
+$routes->get('/userView','UserAccount::showUserView', ['filter' => 'auth']);
+$routes->get('/classView','Admin::classView', ['filter' => 'auth']);
+$routes->get('/adminView','Admin::showAdminView', ['filter' => 'auth']);
+$routes->add('/userEdit/(:num)','UserAccount::userEdit/$1', ['filter' => 'auth']);
+$routes->post('/userUpdate', 'UserAccount::userUpdate', ['filter' => 'auth']);
+$routes->add('/userDelete/(:num)','UserAccount::userDelete/$1', ['filter' => 'auth']);
+$routes->add('/profileEdit/(:num)','UserAccount::profileEdit/$1');
+$routes->post('/profileUpdate', 'UserAccount::profileUpdate');
 /*
  * --------------------------------------------------------------------
  * Route Definitions

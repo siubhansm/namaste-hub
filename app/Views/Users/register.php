@@ -10,7 +10,7 @@
     <div class="container ">
       <br>
        <form class="nForm" method="post" action="<?= base_url('submit')?>">
-        <h1>Register at Namaste Yoga</h1> 
+        <h1>Register at Yoga Hub</h1> 
         <?php if (session()->getFlashdata('item') !== NULL) : ?>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         <?php echo session()->getFlashdata('item'); ?>
@@ -39,7 +39,7 @@
             <div >
                 <label >Date of Birth</label>
                 <input type="text" name="dob" class="form-control" value="<?php
-             echo $dob; ?>">         
+             echo $dob; ?>" placeholder="YYYY-MM-DD">         
             </div>
             </div>
             <div class="form-row">

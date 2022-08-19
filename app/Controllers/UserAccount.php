@@ -35,7 +35,7 @@ class UserAccount extends Controller
         helper(['form']);
         //create a new user model instance
        $userModel=new userModel();
-       //assign indivisual variables to input fields
+       //assign individual variables to input fields
         $fName=$this->request->getVar('fName');
         $lName=$this->request->getVar('lName');
         $email=$this->request->getVar('email');
@@ -95,16 +95,17 @@ class UserAccount extends Controller
             'email'=>$email,
             'dob'=>$dob,
             "msg" => "Email must be valid",
+            
         ];
         echo view ('Users/register', $data);
         }
-         else if(!preg_match('/^([0-9]{1,2})\\/([0-9]{1,2})\\/([0-9]{4})$/', $dob)){
+         else if(!preg_match('/^([0-9]{4})\\-([0-9]{2})\\-([0-9]{2})$/', $dob)){
            $data = [
             'fName'=>$fName,
             'lName'=>$lName,
             'email'=>$email,
             'dob'=>$dob,
-            "msg" => "Please enter a valid date of birth using the format DD/MM/YYYY",
+            "msg" => "Please enter a valid date of birth using the format YYYY-MM-DD",
         ];
         echo view ('Users/register', $data);
         }
@@ -136,11 +137,69 @@ class UserAccount extends Controller
         return $this->response->redirect(base_url('/login'));          
      }
     }
-    public function update()
+    
+    public function showUserView()
     {
-        return view ('Users/updateProfile');
+         $model = new userModel();
+          $data['table'] = $model->findAll();
+          
+          return view('Admin/userView', $data);
+        }
+         public function userEdit ($userId)
+    {
+        $model = new userModel();
+        $data['users'] = $model->where('userId', $userId)->first();
+        return view('Users/userUpdate',$data);
     }
-
+         public function userUpdate()
+    {
+        $model = new userModel();
+        $userId = $this->request->getVar('userId');
+        $data = [
+            'fName' => $this->request->getVar('fName'),
+            'lName' => $this->request->getVar('lName'),
+            'email' => $this->request->getVar('email'),
+            'dob' => $this->request->getVar('dob'),
+        ];
+        $model->update($userId, $data);
+        return $this->response->redirect(site_url('/userView'));
+    }
+    public function userDelete($userId = null)
+    {
+        $model = new userModel();
+        $data['users'] = $model->where('userId', $userId)->delete($userId);
+        return $this->response->redirect(site_url('/userView'));
+    }
+    public function profileEdit ($userId)
+    {
+        $model = new userModel();
+        $data['users'] = $model->where('userId', $userId)->first();
+        return view('Users/profileUpdate',$data);
+    }
+         public function profileUpdate()
+    {
+        $model = new userModel();
+        $userId = $this->request->getVar('userId');
+        $data = [
+            'userId' => $this->request->getVar('userId'),
+            'fName' => $this->request->getVar('fName'),
+            'lName' => $this->request->getVar('lName'),
+            'email' => $this->request->getVar('email'),
+            'dob' => $this->request->getVar('dob'),
+        ];
+        $model->update($userId, $data);
+        $ses_data = [ 
+                    'userId' => $data['userId'],
+                    'fName' => $data['fName'],
+                    'lName' => $data['lName'],
+                    'email' => $data['email'],
+                    'dob' => $data['dob'],
+                    'logged_in' => true
+                ];
+                $session = session();
+                $session->set($ses_data);
+                return redirect()->to(base_url('/dashboard'));
+    }
 }
 ?>
 <?php

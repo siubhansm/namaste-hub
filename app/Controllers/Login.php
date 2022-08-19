@@ -25,36 +25,35 @@ class Login extends Controller
             //$verify_pass = password_verify($password, $pass);
             if($password === $pass){
                 $ses_data = [ 
-                    'id' => $data['userId'],
+                    'userId' => $data['userId'],
                     'fName' => $data['fName'],
                     'lName' => $data['lName'],
                     'email' => $data['email'],
+                    'dob' => $data['dob'],
                     'logged_in' => true
                 ];
                 $session->set($ses_data);
                 return redirect()->to(base_url('/dashboard'));
             }
             else{
-                $session->setFlashdata('item', 'Wrong Password');
+                $session->setFlashdata('item', 'Wrong password, please try again');
                 return redirect()->to(base_url('/login'));
             }
         }
         else{
-            $session->setFlashdata('item', 'Email not found');
+            $session->setFlashdata('item', 'Email not found, why not register here?');
             return redirect()->to(base_url('/register'));
         }
     }
     public function dashboard()
     {
-       
-        echo view ('Users/dashboard');
-        
+        return view('Users/dashboard');
     }
     public function logout()
     {
         $session = session();
         $session->destroy();
-         return redirect()->to(base_url('/login'));
+         return redirect()->to(base_url('/'));
     }
 } 
 ?>

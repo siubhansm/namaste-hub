@@ -17,6 +17,22 @@
   background-position: center center;
   background-size: cover;
 }
+.nDashboard {
+  height: 100vh;
+  background-image: url("../images/plantImage.webp");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.nAdmin {
+  height: 100vh;
+  background-image: url("../images/adminImage.webp");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
 .nLogin {
   height: 100vh;
   background-image: url("../images/loginImage.webp");
@@ -52,4 +68,32 @@
 }
 .form-label {
   color: black;
+}
+.nTable {
+  border: 4px solid #ececec;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+}
+.nGradient {
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+  /*https://gradients.shecodes.io/gradients/192*/
+  height: 100vh;
+}
+.nProfile {
+  margin-top: 3%;
+  width: 50%;
+  border: 4px solid #ececec;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.8);
+}
+.nProfile h2 {
+  padding-bottom: 20px;
+}
+.nProfile a {
+  margin-bottom: 20px;
 }
