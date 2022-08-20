@@ -175,13 +175,14 @@ class UserAccount extends Controller
     }
     public function profileEdit ($userId)
     { 
-        $model = new userModel();
-        $data['users'] = $model->where('userId', $userId)->first();
-        if (!$userId==$data['users']){
-            return view('Users/dashboard');
-        }
+        $session = session();
+        $loggedInUser=$session->get('userId');
+        if($loggedInUser==$userId)
+        {echo view('Users/dashboard');}
         else
-        {return view('Users/profileUpdate',$data);}
+        {$model = new userModel();
+        $data['users'] = $model->where('userId', $userId)->first();
+        return view('Users/profileUpdate',$data);}
     }
          public function profileUpdate()
     {
