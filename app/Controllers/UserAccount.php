@@ -177,8 +177,8 @@ class UserAccount extends Controller
     { 
         $session = session();
         $loggedInUser=$session->get('userId');
-        if($loggedInUser==$userId)
-        {echo view('Users/dashboard');}
+        if(!$loggedInUser==$userId)
+        {echo view('/dashboard');}
         else
         {$model = new userModel();
         $data['users'] = $model->where('userId', $userId)->first();
