@@ -35,6 +35,9 @@
         </tbody>
        </table>
        <div class="blankSpace"></div>
+       <div class="blankSpace"></div>
+       <div class="blankSpace"></div>
+       <div class="blankSpace"></div>
         </div>
 </div>
  <?php echo view ('Assets/footer');  ?>
