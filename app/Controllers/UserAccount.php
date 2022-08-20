@@ -182,7 +182,8 @@ class UserAccount extends Controller
         else
         {$model = new userModel();
         $data['users'] = $model->where('userId', $userId)->first();
-        return view('Users/profileUpdate',$data);}
+         echo view ('Users/profileUpdate', $data);
+}
     }
          public function profileUpdate()
     {
