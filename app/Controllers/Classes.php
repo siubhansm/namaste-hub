@@ -83,7 +83,7 @@ class Classes extends BaseController
     {
         $model = new classModel();
         $data['classes'] = $model->where('classId', $classId)->first();
-        return view('classes/classUpdate',$data);
+        return view('Classes/classUpdate',$data);
     }
      public function classUpdate()
     {
