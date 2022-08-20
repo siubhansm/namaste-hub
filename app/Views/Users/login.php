@@ -5,7 +5,7 @@
       <br>
       <div class="container">
         <div class="nForm">
-         <h1>Login to your account</h1> 
+         <h1>Log in to access classes</h1> 
          <h6 class="error">
        
       <form method="post" name="loginuser" action="<?= site_url('/authoriseUser') ?>">

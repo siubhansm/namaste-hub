@@ -1,5 +1,5 @@
 <html>
-    <body>
+    <body class="nBody">
      <?php echo view ('Assets/header');  ?>
 <br>
       <div class="container">
@@ -9,7 +9,7 @@
        
       <form method="post" name="loginuser" action="<?= site_url('/upload') ?>" enctype="multipart/form-data">
   <div class="mb-3">
-    <label class="form-label">Video</label>
+    <label class="form-label">Video URL</label>
     <input value="" type="text" name="file" id="file" class="form-control" >
   </div>
   <div class="mb-3">

@@ -54,6 +54,7 @@ class UserAccount extends Controller
             'email'=>$this->request->getVar('email'),
             'dob'=>$this->request->getVar('dob'),
             'password'=>$this->request->getVar('password'),
+            
         ];
         
 
@@ -134,6 +135,8 @@ class UserAccount extends Controller
       else{    
         
         $userModel->insert($data);
+        $session = session();
+        $session->setFlashdata('item', 'Thanks for registering, please log in');
         return $this->response->redirect(base_url('/login'));          
      }
     }

@@ -17,19 +17,31 @@ class Classes extends BaseController
         $data = [];
          helper(['form']);
        $videoModel=new classModel();
+        $video=$this->request->getVar('file');
+        $replacement = 'embed/';
+        $position=stripos($video,"watch?v=");
+        $finalVideo=substr_replace($video, $replacement, $position, 8);
 
-        $data['video']=$this->request->getVar('file');
+        $data['video']=$finalVideo;
         $data['name']=$this->request->getVar('name');
         $data['description']=$this->request->getVar('description');
         $videoModel->insert($data);
-        echo view ('Classes/video', $data);
+
+        $sendData['video'] = array('video' => $finalVideo ,
+    'name' => $data['name'], 'description' => $data['description'] );
+        echo view ('Classes/video', $sendData);
     }
  
     public function video()
     {
          echo view ('Classes/video');   
     }
-   
+    public function classes()
+    {
+         $model = new classModel();
+          $data['table'] = $model->findAll();
+          return view('Classes/classes', $data);
+        }
 
 }
 

@@ -11,7 +11,7 @@
             <div class="d-flex flex-column p-5">
                 <p class="nDescription">Yoga does not just change the way we see things, it transforms the person who sees.
                    <i>- B.K.S Iyengar</i></p>
-                <a class="nLink" href="<?php echo base_url('/register') ?>">Click here to register with Yoga Hub</a>
+                <a class="btn btn-secondary w-25" href="<?php echo base_url('/register') ?>">Register to access classes</a>
             </div>
         </div>
     

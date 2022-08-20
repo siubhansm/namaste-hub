@@ -23,28 +23,31 @@
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
-         <?php  $session = session();
-        if(!$session->get('logged_in')) echo '<li class="nav-item">
-          <a class="nav-link" href="/register">Register</a></li>';  ?>
-         <?php if($session->get('logged_in')) echo '<li class="nav-item">
-          <a class="nav-link disabled" href="/register">Register</a></li>';  ?>
+        <?php // $session = session();
+        //if(!$session->get('logged_in')) echo '<li class="nav-item">
+        //  <a class="nav-link" href="/register">Register</a></li>';  ?>
+      <li class="nav-item">
+          <a class="nav-link" href="/classes">Classes</a>
+        </li>
         <?php  $session = session();
         if(!$session->get('logged_in')) echo '<li class="nav-item">
           <a class="nav-link" href="/login">Login</a>
         </li>';  ?>
         </li>
+        
         <?php  $session = session();
         if($session->get('logged_in')) echo '<li class="nav-item">
           <a class="nav-link" href="/logout">Logout</a>
         </li>';  ?>
+        
         </ul>
        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">  
          <?php  $session = session();
         if($session->get('admin_logged_in')) echo '<li class="nav-item">
-          <a class="nav-link" href="/dashboardAdmin">Dashboard</a>
+          <a class="nav-link" href="/dashboardAdmin">My Dashboard</a>
         </li>';  
         else if ($session->get('logged_in')) echo '<li class="nav-item">
-          <a class="nav-link" href="/dashboard">Dashboard</a>
+          <a class="nav-link" href="/dashboard">My Dashboard</a>
         </li>';  ?>
        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,7 +58,7 @@
             <?php  $session = session();
            if(!$session->get('admin_logged_in')) echo '<li><a class="dropdown-item" href="/loginAdmin">Admin Login</a></li>';
              
-        if($session->get('admin_logged_in')) echo '<li><a class="dropdown-item" href="/userView">User View</a></li><li><a class="dropdown-item" href="/adminView">Admin View</a></li><li><a class="dropdown-item" href="/classView">Class View</a></li>';  ?>
+        if($session->get('admin_logged_in')) echo '<li><a class="dropdown-item" href="/userView">User View</a></li><li><a class="dropdown-item" href="/adminView">Admin View</a></li><li><a class="dropdown-item" href="/uploadView">Upload a Class</a></li>';  ?>
 
           </ul>
         </li>
