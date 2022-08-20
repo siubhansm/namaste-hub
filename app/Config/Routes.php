@@ -46,7 +46,7 @@ $routes->get('/adminView','Admin::showAdminView', ['filter' => 'auth']);
 $routes->add('/userEdit/(:num)','UserAccount::userEdit/$1', ['filter' => 'auth']);
 $routes->post('/userUpdate', 'UserAccount::userUpdate', ['filter' => 'auth']);
 $routes->add('/userDelete/(:num)','UserAccount::userDelete/$1', ['filter' => 'auth']);
-$routes->get('/profileEdit/(:num)','UserAccount::profileEdit/$1');
+$routes->add('/profileEdit/(:num)','UserAccount::profileEdit/$1');
 $routes->post('/profileUpdate', 'UserAccount::profileUpdate');
 $routes->get('/uploadView','Classes::uploadView', ['filter' => 'auth']);
 $routes->post('/upload','Classes::upload', ['filter' => 'auth']);
