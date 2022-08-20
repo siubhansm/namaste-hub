@@ -9,7 +9,7 @@
 
     <div class="container ">
       <br>
-       <form method="post" name="profileUpdate" action="<?= site_url('/profileUpdate') ?>" >
+       <form method="post" name="profileUpdate" action="<?= base_url('/profileUpdate') ?>" >
        
         <h1>Update User</h1> 
         <input type="hidden" name="userId" id="iuserId" value="<?php echo $users['userId']; ?>">
