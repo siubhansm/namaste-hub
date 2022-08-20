@@ -14,7 +14,7 @@
           
          <h2> Here are the latest registrations: </h2>
           <?php foreach(array_reverse(array_slice($table, 0, 9)) as $key)
-     echo "<li>".$key['regsitration']." <b>".$key['fName']." ".$key['lName']."</b></li>"; ?>
+     echo "<li>".$key['registration']." <b>".$key['fName']." ".$key['lName']."</b></li>"; ?>
      </div> 
       </div>
       </div>
