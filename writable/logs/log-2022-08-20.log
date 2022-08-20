@@ -1,0 +1,183 @@
+CRITICAL - 2022-08-20 04:07:06 --> Undefined array key "userId"
+in APPPATH/Views/Admin/classView.php on line 27.
+ 1 APPPATH/Views/Admin/classView.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userId"', 'APPPATH/Views/Admin/classView.php', 27)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Admin/classView.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Admin/classView', [], true)
+ 5 APPPATH/Controllers/Classes.php(50): view('Admin/classView', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->showClassView()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:32:14 --> Class "App\Controllers\userModel" not found
+in APPPATH/Controllers/Classes.php on line 54.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classEdit('55')
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:32:27 --> Class "App\Controllers\userModel" not found
+in APPPATH/Controllers/Classes.php on line 54.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classEdit('55')
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:43:44 --> Invalid file: classes/classUpdate.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('classes/classUpdate.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('classes/classUpdate', [], true)
+ 3 APPPATH/Controllers/Classes.php(56): view('classes/classUpdate', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classEdit('55')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:50:20 --> Class "App\Controllers\userModel" not found
+in APPPATH/Controllers/Classes.php on line 60.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classUpdate()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:50:36 --> Class "App\Controllers\userModel" not found
+in APPPATH/Controllers/Classes.php on line 60.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classUpdate()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:52:42 --> Undefined variable $classId
+in APPPATH/Controllers/Classes.php on line 67.
+ 1 APPPATH/Controllers/Classes.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $classId', 'APPPATH/Controllers/Classes.php', 67)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classUpdate()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:57:24 --> stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in APPPATH/Controllers/Classes.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'APPPATH/Controllers/Classes.php', 64)
+ 2 APPPATH/Controllers/Classes.php(64): stripos(null, 'watch?v=')
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classUpdate()
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:59:16 --> stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in APPPATH/Controllers/Classes.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'APPPATH/Controllers/Classes.php', 64)
+ 2 APPPATH/Controllers/Classes.php(64): stripos(null, 'watch?v=')
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classUpdate()
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 04:59:19 --> stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in APPPATH/Controllers/Classes.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'APPPATH/Controllers/Classes.php', 64)
+ 2 APPPATH/Controllers/Classes.php(64): stripos(null, 'watch?v=')
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->classUpdate()
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:30:23 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH/Views/Classes/uploadView.php on line 34.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Classes/uploadView', [], true)
+ 3 APPPATH/Controllers/Classes.php(12): view('Classes/uploadView')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->uploadView()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:32:25 --> Undefined variable $msg
+in APPPATH/Views/Classes/uploadView.php on line 24.
+ 1 APPPATH/Views/Classes/uploadView.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $msg', 'APPPATH/Views/Classes/uploadView.php', 24)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Classes/uploadView.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Classes/uploadView', [], true)
+ 5 APPPATH/Controllers/Classes.php(12): view('Classes/uploadView')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->uploadView()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:33:23 --> Invalid file: Users/uploadView.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Users/uploadView.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Users/uploadView', [], true)
+ 3 APPPATH/Controllers/Classes.php(45): view('Users/uploadView', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->upload()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:36:11 --> site_url(): Argument #2 ($scheme) must be of type ?string, array given, called in /Applications/XAMPP/xamppfiles/htdocs/namaste-hub/app/Controllers/Classes.php on line 45
+in SYSTEMPATH/Helpers/url_helper.php on line 80.
+ 1 APPPATH/Controllers/Classes.php(45): site_url('/uploadView', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->upload()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:36:44 -->  route cannot be found while reverse-routing.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 56.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('ROOTPATH/public')
+ 2 SYSTEMPATH/Common.php(863): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Classes.php(45): redirect('http://localhost:8080/index.php/uploadView', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->upload()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:37:39 --> CodeIgniter\HTTP\Response::redirect(): Argument #2 ($method) must be of type string, array given, called in /Applications/XAMPP/xamppfiles/htdocs/namaste-hub/app/Controllers/Classes.php on line 45
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 502.
+ 1 APPPATH/Controllers/Classes.php(45): CodeIgniter\HTTP\Response->redirect('http://localhost:8080/index.php/uploadView', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->upload()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:42:14 --> Invalid file: Classes/uploadVideo.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Classes/uploadVideo.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Classes/uploadVideo', [], true)
+ 3 APPPATH/Controllers/Classes.php(45): view('Classes/uploadVideo', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->upload()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:43:20 --> Invalid file: Classes/uploadVideo.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Classes/uploadVideo.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Classes/uploadVideo', [], true)
+ 3 APPPATH/Controllers/Classes.php(45): view('Classes/uploadVideo', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->upload()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:43:53 --> Invalid file: Classes/uploadVideo.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Classes/uploadVideo.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Classes/uploadVideo', [], true)
+ 3 APPPATH/Controllers/Classes.php(45): view('Classes/uploadVideo', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->upload()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-20 05:44:19 --> Invalid file: Classes/uploadVideo.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Classes/uploadVideo.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Classes/uploadVideo', [], true)
+ 3 APPPATH/Controllers/Classes.php(45): view('Classes/uploadVideo', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Classes->upload()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Classes))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

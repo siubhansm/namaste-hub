@@ -1,0 +1,411 @@
+CRITICAL - 2022-08-15 07:33:12 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH/Views/homePage.php on line 4.
+ 1 APPPATH/Views/homePage.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH/Views/homePage.php', 4)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/homePage.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('homePage', [], true)
+ 5 APPPATH/Controllers/Home.php(10): view('homePage')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 07:33:14 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH/Views/homePage.php on line 4.
+ 1 APPPATH/Views/homePage.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH/Views/homePage.php', 4)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/homePage.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('homePage', [], true)
+ 5 APPPATH/Controllers/Home.php(10): view('homePage')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 07:33:39 --> Undefined variable $detail
+in APPPATH/Views/homePage.php on line 2.
+ 1 APPPATH/Views/homePage.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detail', 'APPPATH/Views/homePage.php', 2)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/homePage.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('homePage', [], true)
+ 5 APPPATH/Controllers/Home.php(10): view('homePage')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 07:39:28 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 07:39:29 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 13.
+ 1 APPPATH/Controllers/Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH/Controllers/Home.php', 13)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 07:41:11 --> Undefined property: CodeIgniter\Autoloader\Autoloader::$load
+in APPPATH/Controllers/Home.php on line 4.
+ 1 APPPATH/Controllers/Home.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Autoloader\\Autoloader::$load', 'APPPATH/Controllers/Home.php', 4)
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(284): include_once('APPPATH/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 6 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\Home', true)
+ 7 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 07:45:12 --> Undefined property: Config\View::$config
+in APPPATH/Views/homePage.php on line 8.
+ 1 APPPATH/Views/homePage.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\View::$config', 'APPPATH/Views/homePage.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/homePage.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('homePage', [], true)
+ 5 APPPATH/Controllers/Home.php(11): view('homePage')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 07:45:13 --> Undefined property: Config\View::$config
+in APPPATH/Views/homePage.php on line 8.
+ 1 APPPATH/Views/homePage.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\View::$config', 'APPPATH/Views/homePage.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/homePage.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('homePage', [], true)
+ 5 APPPATH/Controllers/Home.php(11): view('homePage')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 08:41:55 --> syntax error, unexpected token "return", expecting "function" or "const"
+in APPPATH/Controllers/UserAccount.php on line 59.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/UserAccount.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserAccount')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserAccount')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\UserAccount', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 08:41:55 --> syntax error, unexpected token "return", expecting "function" or "const"
+in APPPATH/Controllers/UserAccount.php on line 59.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/UserAccount.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserAccount')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserAccount')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\UserAccount', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 08:41:56 --> syntax error, unexpected token "return", expecting "function" or "const"
+in APPPATH/Controllers/UserAccount.php on line 59.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/UserAccount.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserAccount')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserAccount')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\UserAccount', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 08:42:42 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 08:42:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 08:45:03 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 08:45:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 08:47:56 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 08:47:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 08:53:30 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 08:53:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 08:54:07 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 08:54:07 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 08:56:47 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 08:56:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 09:03:04 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 09:03:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 09:09:58 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 09:09:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 09:11:11 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 09:11:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 09:12:26 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 09:12:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 09:14:01 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 09:14:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-15 09:15:55 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-08-15 09:15:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`fName`, `lName`, `email`, `dob`, `password`) VALUES (:fName:, :lName:, :email:, :dob:, :password:)', [...], false)
+ 3 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/userAccount.php(49): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAccount->addUser()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 09:30:30 --> syntax error, unexpected token "public"
+in APPPATH/Controllers/UserAccount.php on line 46.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/UserAccount.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserAccount')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserAccount')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\UserAccount', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 09:47:44 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/Users/dashboard.php on line 12.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Users/dashboard', [], true)
+ 3 APPPATH/Controllers/Login.php(49): view('Users/dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 09:54:29 --> Invalid file: Controllers/dashboard1.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Controllers/dashboard1.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Controllers/dashboard1', [], true)
+ 3 APPPATH/Controllers/Login.php(49): view('Controllers/dashboard1')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 10:11:22 --> Undefined constant "App\Controllers\console"
+in APPPATH/Controllers/Login.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->authorise()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 10:18:31 --> Invalid file: Users/header.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Users/header.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Users/header', [], true)
+ 3 APPPATH/Controllers/Login.php(50): view('Users/header')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 10:22:12 --> Invalid file: /dashboard.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('/dashboard', [], true)
+ 3 APPPATH/Controllers/Login.php(50): view('/dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 10:22:31 --> Invalid file: dashboard.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH/Controllers/Login.php(50): view('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 10:22:32 --> Invalid file: dashboard.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH/Controllers/Login.php(50): view('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 10:23:08 --> Undefined variable $session
+in APPPATH/Views/Users/dashboard.php on line 4.
+ 1 APPPATH/Views/Users/dashboard.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Views/Users/dashboard.php', 4)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Users/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Users/dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(50): view('Users/dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 10:23:09 --> Undefined variable $session
+in APPPATH/Views/Users/dashboard.php on line 4.
+ 1 APPPATH/Views/Users/dashboard.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Views/Users/dashboard.php', 4)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Users/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Users/dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(50): view('Users/dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-15 10:23:10 --> Undefined variable $session
+in APPPATH/Views/Users/dashboard.php on line 4.
+ 1 APPPATH/Views/Users/dashboard.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Views/Users/dashboard.php', 4)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Users/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Users/dashboard', [], true)
+ 5 APPPATH/Controllers/Login.php(50): view('Users/dashboard')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Login->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
