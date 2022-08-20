@@ -174,10 +174,14 @@ class UserAccount extends Controller
         return $this->response->redirect(site_url('/userView'));
     }
     public function profileEdit ($userId)
-    {
+    { 
         $model = new userModel();
         $data['users'] = $model->where('userId', $userId)->first();
-        return view('Users/profileUpdate',$data);
+        if (!$userId==$data['users']){
+            return view('Users/dashboard');
+        }
+        else
+        {return view('Users/profileUpdate',$data);}
     }
          public function profileUpdate()
     {
