@@ -1,8 +1,8 @@
 <?php namespace App\Controllers;
   
 use CodeIgniter\Controller;
-use App\Models\AdminModel;
-use App\Models\UserModel;
+use App\Models\adminModel;
+use App\Models\userModel;
   
 class Admin extends Controller
 {

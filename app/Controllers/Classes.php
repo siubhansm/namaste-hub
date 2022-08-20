@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\ClassModel;
+use App\Models\classModel;
 
 class Classes extends BaseController
 {
