@@ -2,9 +2,9 @@
   <head>
     <title><?php echo ('Yoga Hub'); ?></title>
   </head>
-    <body>
+    <body class="nBody">
      <?php echo view ('Assets/header');  ?>
-     <div class="nGradient">
+     <div >
       <br>
       <div class="container">
        <h1>Users</h1>
