@@ -7,7 +7,7 @@
          <h1>Upload Class</h1> 
          <h6 class="error">
        
-      <form method="post" name="loginuser" action="<?= site_url('/classUpdate') ?>" enctype="multipart/form-data">
+      <form method="post" name="classUpdate" action="<?= site_url('/classUpdate') ?>">
   <div class="mb-3">
        <input type="hidden" name="classId" id="classId" value="<?php echo $classes['classId']; ?>">
     <label class="form-label">Video URL</label>
