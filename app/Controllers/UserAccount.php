@@ -177,8 +177,8 @@ class UserAccount extends Controller
     { 
         $session = session();
         $loggedInUser=$session->get('userId');
-        if(!$loggedInUser==$userId)
-        {echo view('/dashboard');}
+        if(!$loggedInUser===$userId)
+        {return redirect()->to(base_url('/dashboard'));}
         else
         {$model = new userModel();
         $data['users'] = $model->where('userId', $userId)->first();
