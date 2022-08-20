@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://44.208.90.50/namaste-hub/public';
+    public $baseURL = 'http://localhost:8080/';
 
     /**
      * --------------------------------------------------------------------------
