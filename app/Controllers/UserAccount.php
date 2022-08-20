@@ -177,7 +177,7 @@ class UserAccount extends Controller
     { 
         $session = session();
         $loggedInUser=$session->get('userId');
-        if(!$loggedInUser===$userId)
+        if(!($loggedInUser===$userId))
         {return redirect()->to(base_url('/dashboard'));}
         else
         {$model = new userModel();
