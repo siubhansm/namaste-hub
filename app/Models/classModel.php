@@ -7,7 +7,7 @@ class classModel extends Model
     protected $table = 'Classes';
     protected $primaryKey = 'classId';
     
-    protected $allowedFields = ['description','video', 'name'];
+    protected $allowedFields = ['description','video', 'name', 'embedURL'];
 
 }
 

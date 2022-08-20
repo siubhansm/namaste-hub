@@ -12,7 +12,7 @@
        <form method="post" name="userUpdate" action="<?= site_url('/userUpdate') ?>" >
        
         <h1>Update User</h1> 
-        <input type="hidden" name="userId" id="iuserId" value="<?php echo $users['userId']; ?>">
+        <input type="hidden" name="userId" id="userId" value="<?php echo $users['userId']; ?>">
             <div class="form-row" >
                 <div class="form-group">
                     <label>First Name</label>

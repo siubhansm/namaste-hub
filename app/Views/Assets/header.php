@@ -58,7 +58,7 @@
             <?php  $session = session();
            if(!$session->get('admin_logged_in')) echo '<li><a class="dropdown-item" href="/loginAdmin">Admin Login</a></li>';
              
-        if($session->get('admin_logged_in')) echo '<li><a class="dropdown-item" href="/userView">User View</a></li><li><a class="dropdown-item" href="/adminView">Admin View</a></li><li><a class="dropdown-item" href="/uploadView">Upload a Class</a></li>';  ?>
+        if($session->get('admin_logged_in')) echo '<li><a class="dropdown-item" href="/userView">View all users</a></li><li><a class="dropdown-item" href="/adminView">View all admin users</a></li><li><a class="dropdown-item" href="/classView">View all classes</a></li><li><a class="dropdown-item" href="/uploadView">Upload a class</a></li>';  ?>
 
           </ul>
         </li>

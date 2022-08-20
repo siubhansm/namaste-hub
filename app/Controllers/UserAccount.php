@@ -36,8 +36,8 @@ class UserAccount extends Controller
         //create a new user model instance
        $userModel=new userModel();
        //assign individual variables to input fields
-        $fName=$this->request->getVar('fName');
-        $lName=$this->request->getVar('lName');
+        $fName=trim($this->request->getVar('fName'));
+        $lName=trim($this->request->getVar('lName'));
         $email=$this->request->getVar('email');
         $dob=$this->request->getVar('dob');
         $password=$this->request->getVar('password');

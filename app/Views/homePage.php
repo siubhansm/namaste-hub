@@ -11,7 +11,10 @@
             <div class="d-flex flex-column p-5">
                 <p class="nDescription">Yoga does not just change the way we see things, it transforms the person who sees.
                    <i>- B.K.S Iyengar</i></p>
-                <a class="btn btn-secondary w-25" href="<?php echo base_url('/register') ?>">Register to access classes</a>
+                    <?php  $session = session();
+        if($session->get('logged_in')) echo '<a class="btn btn-secondary w-25" href="/classes">Go to classes</a>';  
+        else if (!$session->get('logged_in')) echo '<a class="btn btn-secondary w-25" href="/register">Register to access classes</a>';  ?>
+                
             </div>
         </div>
     
