@@ -43,7 +43,7 @@
                 <input type="text" name="dob" class="form-control" value="<?php echo $users['dob']; ?>" >         
             </div>
             </div>
-            <input type="submit" class="btn btn-secondary">
+            <input type="submit" value="submit" class="btn btn-secondary">
         </form>
         </div>
         </div>

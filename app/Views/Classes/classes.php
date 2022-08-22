@@ -7,10 +7,10 @@
 
           <?php foreach($table as $key){ ?>
             <div >
-              <h3  class="mx-auto" ><?php echo $key['name']; ?></h3>
+              <h3><?php echo $key['name']; ?></h3>
               <br>
-             <iframe class="mx-auto" width="480" height="270" src="<?php echo $key['embedURL']; ?>" title="<?php echo $key['name']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             <br><p  class="mx-auto" ><?php echo $key['description']; ?></p>
+             <iframe width="480" height="270" src="<?php echo $key['embedURL']; ?>" title="<?php echo $key['name']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <br><p><?php echo $key['description']; ?></p>
         </div>
  
           <?php } ?>
