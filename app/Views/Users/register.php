@@ -56,7 +56,7 @@
             <?php
              echo $msg; ?></div>
             <br/>
-            <input type="submit" class="btn btn-secondary">Submit</input>
+            <input type="submit" value="Submit" class="btn btn-secondary">
         </form>
         </div>
         </div>
