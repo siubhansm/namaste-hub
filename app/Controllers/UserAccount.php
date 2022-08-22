@@ -154,6 +154,7 @@ class UserAccount extends Controller
         $data['users'] = $model->where('userId', $userId)->first();
         return view('Users/userUpdate',$data);
     }
+    //this function is for the administrator, so they can updates and user
          public function userUpdate()
     {
         $model = new userModel();
@@ -173,10 +174,12 @@ class UserAccount extends Controller
         $data['users'] = $model->where('userId', $userId)->delete($userId);
         return $this->response->redirect(site_url('/userView'));
     }
+    //this function is for the user, so that they can update their own profile
     public function profileEdit ($userId)
     { 
         $session = session();
         $loggedInUser=$session->get('userId');
+        //here it has to be verified that the id in the session data matches the id of the user being updated
         if(!($loggedInUser===$userId))
         {return redirect()->to(base_url('/dashboard'));}
         else
@@ -210,11 +213,4 @@ class UserAccount extends Controller
                 return redirect()->to(base_url('/dashboard'));
     }
 }
-?>
-<?php
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 ?>

@@ -7,7 +7,7 @@
      <div >
       <br>
       <div class="container">
-       <h1>Users</h1>
+       <h1>Classes</h1>
        <table class="table table-striped nTable">
         <thead>
           <th scope="col">#</th>
@@ -17,8 +17,9 @@
           <th scope="col">Description</th>
         </thead>
         <tbody>
+<!--This loop goes through each row of data in the database gotten in the controller, the variable i is used to represent the index of each row of data-->
           <?php $i=1; foreach($table as $key){ ?>
-            <tr>
+            <tr>   
               <td scope="row"><?php echo $i++; ?></td>
               <td scope="row"><?php echo $key['classId']; ?></td>
               <td scope="row"><iframe src="<?php echo $key['embedURL'];?>" title="<?php echo $key['name']; ?>"></iframe></td>
