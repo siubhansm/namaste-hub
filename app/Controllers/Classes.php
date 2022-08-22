@@ -106,7 +106,7 @@ class Classes extends BaseController
     {
         $model = new classModel();
         $data['classes'] = $model->where('classId', $classId)->delete($classId);
-        return $this->response->redirect(site_url('/classView'));
+        return $this->response->redirect(base_url('/classView'));
     }
 
 }
