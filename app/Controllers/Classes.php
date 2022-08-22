@@ -100,7 +100,7 @@ class Classes extends BaseController
         $data['name']=$this->request->getVar('name');
         $data['description']=$this->request->getVar('description');
         $model->update($classId, $data);
-        return $this->response->redirect(site_url('/classView'));
+        return $this->response->redirect(base_url('/classView'));
     }
     public function classDelete($classId = null)
     {
